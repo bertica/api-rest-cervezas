@@ -4,6 +4,9 @@ var bodyParser = require('body-parser')
 
 var port = process.env.PORT || 8080 // establecemos nuestro puerto
 
+/*toda la configuración de bbdd la hacemos en un fichero a parte*/
+require('./db')
+
 app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json())
 
