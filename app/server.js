@@ -18,3 +18,6 @@ app.use('/api', router)
 //arrancamos el servidor
 app.listen(port)
 console.log('API escuchando en el puerto ' + port)
+
+/*lo añado al final de app/server.js:*/
+module.exports = app
